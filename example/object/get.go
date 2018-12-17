@@ -10,12 +10,12 @@ import (
 
 	"net/http"
 
-	"github.com/tencentyun/cos-go-sdk-v5"
+	cos "github.com/tencentyun/cos-go-sdk-v5"
 	"github.com/tencentyun/cos-go-sdk-v5/debug"
 )
 
 func main() {
-	u, _ := url.Parse("https://test-1253846586.cos.ap-guangzhou.myqcloud.com")
+	u, _ := url.Parse(fmt.Sprintf("https://%s-%s.cos.%s.myqcloud.com", os.Getenv("COS_BUCKET"), os.Getenv("COS_APPID"), os.Getenv("COS_REGION")))
 	b := &cos.BaseURL{BucketURL: u}
 	c := cos.NewClient(b, &http.Client{
 		Transport: &cos.AuthorizationTransport{
@@ -30,7 +30,7 @@ func main() {
 		},
 	})
 
-	name := "test/hello.txt"
+	name := "test.txt"
 	resp, err := c.Object.Get(context.Background(), name, nil)
 	if err != nil {
 		panic(err)

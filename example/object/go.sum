@@ -1,0 +1,6 @@
+github.com/google/go-querystring v1.0.0 h1:Xkwi/a1rcvNg1PPYe5vI8GbeBY/jrVuDX5ASuANWTrk=
+github.com/google/go-querystring v1.0.0/go.mod h1:odCYkC5MyYFN7vkCjXpyrEuKhc/BUO6wN/zVPAxq5ck=
+github.com/mozillazg/go-httpheader v0.2.1 h1:geV7TrjbL8KXSyvghnFm+NyTux/hxwueTSrwhe88TQQ=
+github.com/mozillazg/go-httpheader v0.2.1/go.mod h1:jJ8xECTlalr6ValeXYdOF8fFUISeBAdw6E61aqQma60=
+github.com/tencentyun/cos-go-sdk-v5 v0.0.0-20181213100331-bd54f9e1350e h1:m2/vRvHaJzA543Ijdg53NCFzxNQWeqVwIRtdesAT7jA=
+github.com/tencentyun/cos-go-sdk-v5 v0.0.0-20181213100331-bd54f9e1350e/go.mod h1:/4BhymH1yO6ljUGQgcKsd7L3W+pdKRxoRiOuoZPLnGg=
